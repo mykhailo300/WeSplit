@@ -48,7 +48,7 @@ struct ContentView: View {
                     .pickerStyle(.segmented)
                 }
                 
-                Section {
+                Section("Each should pay: ") {
                     Text(totalPerPerson, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
                 }
             }
